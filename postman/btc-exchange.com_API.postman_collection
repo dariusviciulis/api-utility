@@ -1,0 +1,1807 @@
+{
+	"variables": [],
+	"info": {
+		"name": "btc-exchange.com API",
+		"_postman_id": "1a8a4d88-43d8-02aa-1c0b-4ac902830e09",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Transactions",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/account/getTransactions/wallet/50/0",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "eebc5ddb-77df-4a35-87ca-12112519ee81",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/account/getTransactions/wallet/3/0",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": ""
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "349",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:07:23 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": 1196,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Account API\"},\"message\":\"Transaction List\",\"data\":{\"count\":77,\"transactions\":[{\"uuid\":\"8cf41313-d91e-11e6-816e-0218ad050e37\",\"date\":\"2017-01-13 01:26:31\",\"amount\":\"-0.00100000\",\"type\":\"FEE\",\"confirmation\":\"CONFIRMED\",\"additional\":[]},{\"uuid\":\"61c5e3ed-d91e-11e6-816e-0218ad050e37\",\"date\":\"2017-01-13 01:25:19\",\"amount\":\"0.01000000\",\"type\":\"DEPOSIT\",\"confirmation\":\"CONFIRMED\",\"additional\":{\"external\":\"3NQrCby8pMAKqEhk4JHgrotkwNthQKArZi\"}},{\"uuid\":\"60154d5d-d91e-11e6-816e-0218ad050e37\",\"date\":\"2017-01-13 01:25:16\",\"amount\":\"-0.00100000\",\"type\":\"FEE\",\"confirmation\":\"CONFIRMED\",\"additional\":[]}]},\"duration\":1.0525999069214,\"env\":\"dev\"}"
+						},
+						{
+							"id": "923ffaec-ef22-41be-a06d-0289b761de36",
+							"name": "Fail response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/account/getTransactions/wallet/-50/0",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "Bad Gateway",
+							"code": 502,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "160",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:07:58 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 174,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Account API\"},\"message\":\"Bad Gateway. Contact to support\",\"data\":[],\"duration\":0.013491153717041,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Get Balance",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/account/getBalance",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "266ecc52-901b-4e13-809d-a05896c08c78",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/account/getBalance",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "162",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:09:19 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 701,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Account API\"},\"message\":\"Balance\",\"data\":{\"EUR\":\"261.68\",\"BTC\":\"1.01105778\"},\"duration\":0.53968501091003,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Withdraw Btc",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/account/withdrawBtc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "0.001",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "3GsXAShzVQg9V9AypDQd3z9UkQRJDDtaiX",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "a248c850-6698-42a1-a45e-4444e054ed0e",
+							"name": "Fail response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/account/withdrawBtc",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": "",
+										"warning": ""
+									},
+									{
+										"key": "",
+										"value": "",
+										"description": "",
+										"warning": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "3GsXAShzVQg9V9AypDQd3z9UkQRJDDtai",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "158",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:10:36 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 248,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Account API\"},\"message\":\"WRONG_BTC_ADDRESS\",\"data\":[],\"duration\":0.093379020690918,\"env\":\"dev\"}"
+						},
+						{
+							"id": "8fdb716e-75d1-4473-a72f-edd4876c5f4d",
+							"name": "Success Response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/account/withdrawBtc",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "3GsXAShzVQg9V9AypDQd3z9UkQRJDDtaiX",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "157",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:11:12 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 480,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Account API\"},\"message\":\"Withdraw Order Was Placed\",\"data\":[],\"duration\":0.32999897003174,\"env\":\"dev\"}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Market",
+			"description": "",
+			"item": [
+				{
+					"name": "Get OrderBook",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/market/getOrderbook",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "749b3897-b7d2-4c8d-a0c0-906bb4de050f",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/market/getOrderbook",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "1252",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:14:30 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 436,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Market API\"},\"message\":\"OrderBook\",\"data\":{\"asks\":[{\"amount\":\"0.00448193\",\"price\":\"2258.99\"},{\"amount\":\"0.06287690\",\"price\":\"2259.00\"},{\"amount\":\"0.74955947\",\"price\":\"2260.00\"},{\"amount\":\"4.12750000\",\"price\":\"2272.38\"},{\"amount\":\"0.07015236\",\"price\":\"2272.50\"},{\"amount\":\"0.58760000\",\"price\":\"2274.64\"},{\"amount\":\"2.87250000\",\"price\":\"2276.78\"},{\"amount\":\"3.10380000\",\"price\":\"2277.73\"},{\"amount\":\"3.89620000\",\"price\":\"2282.14\"},{\"amount\":\"3.32800000\",\"price\":\"2282.75\"},{\"amount\":\"4.51730000\",\"price\":\"2287.15\"},{\"amount\":\"4.77380000\",\"price\":\"2291.56\"},{\"amount\":\"3.94880000\",\"price\":\"2293.04\"},{\"amount\":\"1.13295134\",\"price\":\"2295.96\"},{\"amount\":\"0.06000000\",\"price\":\"2300.00\"},{\"amount\":\"0.01446429\",\"price\":\"2345.00\"},{\"amount\":\"0.28632134\",\"price\":\"2350.00\"},{\"amount\":\"1.66103221\",\"price\":\"2375.00\"},{\"amount\":\"0.07172793\",\"price\":\"2376.00\"},{\"amount\":\"0.11509464\",\"price\":\"2378.88\"},{\"amount\":\"0.01273650\",\"price\":\"2378.99\"},{\"amount\":\"0.01591881\",\"price\":\"2379.00\"},{\"amount\":\"0.04344156\",\"price\":\"2380.00\"},{\"amount\":\"0.01000000\",\"price\":\"2382.00\"},{\"amount\":\"2.45686113\",\"price\":\"2400.00\"},{\"amount\":\"1.54241561\",\"price\":\"2400.15\"},{\"amount\":\"4.88768286\",\"price\":\"2450.00\"},{\"amount\":\"0.12863611\",\"price\":\"2458.00\"},{\"amount\":\"0.02173913\",\"price\":\"2475.00\"},{\"amount\":\"0.04569349\",\"price\":\"2482.99\"},{\"amount\":\"0.02127651\",\"price\":\"2486.00\"},{\"amount\":\"0.12614183\",\"price\":\"2494.98\"},{\"amount\":\"0.16050000\",\"price\":\"2495.00\"},{\"amount\":\"0.09999840\",\"price\":\"2499.99\"},{\"amount\":\"1.64861823\",\"price\":\"2500.00\"},{\"amount\":\"0.10000000\",\"price\":\"2501.00\"},{\"amount\":\"0.10000000\",\"price\":\"2505.00\"},{\"amount\":\"0.19999890\",\"price\":\"2506.99\"},{\"amount\":\"0.20000000\",\"price\":\"2510.00\"},{\"amount\":\"0.09999850\",\"price\":\"2512.69\"},{\"amount\":\"0.11193243\",\"price\":\"2520.00\"},{\"amount\":\"0.01201430\",\"price\":\"2526.99\"},{\"amount\":\"0.19999890\",\"price\":\"2537.99\"},{\"amount\":\"0.39976022\",\"price\":\"2539.02\"},{\"amount\":\"0.08380000\",\"price\":\"2540.00\"},{\"amount\":\"0.01000000\",\"price\":\"2558.00\"},{\"amount\":\"0.05000000\",\"price\":\"2570.00\"},{\"amount\":\"0.01178646\",\"price\":\"2574.99\"},{\"amount\":\"0.30000000\",\"price\":\"2591.00\"},{\"amount\":\"0.14627557\",\"price\":\"2595.95\"},{\"amount\":\"0.59510000\",\"price\":\"2600.00\"},{\"amount\":\"0.01304953\",\"price\":\"2650.00\"},{\"amount\":\"0.08609557\",\"price\":\"2682.00\"},{\"amount\":\"0.19518506\",\"price\":\"2690.00\"},{\"amount\":\"0.31017438\",\"price\":\"2700.00\"},{\"amount\":\"0.00537304\",\"price\":\"2710.00\"},{\"amount\":\"0.04671511\",\"price\":\"2750.00\"},{\"amount\":\"0.10000000\",\"price\":\"2790.00\"},{\"amount\":\"0.10187200\",\"price\":\"2800.00\"},{\"amount\":\"0.00048008\",\"price\":\"2888.00\"},{\"amount\":\"0.00225403\",\"price\":\"2900.00\"},{\"amount\":\"0.10000000\",\"price\":\"2990.00\"},{\"amount\":\"0.50030000\",\"price\":\"3000.00\"},{\"amount\":\"1.00000000\",\"price\":\"3020.00\"},{\"amount\":\"1.05728225\",\"price\":\"3150.00\"},{\"amount\":\"0.50000000\",\"price\":\"3175.00\"},{\"amount\":\"0.50000000\",\"price\":\"3200.00\"},{\"amount\":\"0.50000000\",\"price\":\"3375.00\"},{\"amount\":\"0.00595000\",\"price\":\"3500.00\"},{\"amount\":\"0.48000000\",\"price\":\"3610.00\"},{\"amount\":\"0.00100000\",\"price\":\"4000.00\"},{\"amount\":\"0.00130000\",\"price\":\"4269.24\"},{\"amount\":\"0.00159779\",\"price\":\"4500.00\"}],\"bids\":[{\"amount\":\"0.04522840\",\"price\":\"2211.00\"},{\"amount\":\"0.16357919\",\"price\":\"2210.00\"},{\"amount\":\"0.01202543\",\"price\":\"2202.00\"},{\"amount\":\"0.11363637\",\"price\":\"2200.00\"},{\"amount\":\"0.04651163\",\"price\":\"2150.00\"},{\"amount\":\"0.01447922\",\"price\":\"2141.00\"},{\"amount\":\"2.02000000\",\"price\":\"2138.89\"},{\"amount\":\"0.06000000\",\"price\":\"2136.68\"},{\"amount\":\"3.08740000\",\"price\":\"2133.46\"},{\"amount\":\"1.31740000\",\"price\":\"2131.27\"},{\"amount\":\"2.08000000\",\"price\":\"2129.07\"},{\"amount\":\"1.56310000\",\"price\":\"2125.79\"},{\"amount\":\"3.24290000\",\"price\":\"2123.60\"},{\"amount\":\"1.70350000\",\"price\":\"2121.25\"},{\"amount\":\"1.16630000\",\"price\":\"2119.22\"},{\"amount\":\"2.52000000\",\"price\":\"2116.84\"},{\"amount\":\"0.10000000\",\"price\":\"2112.43\"},{\"amount\":\"0.02380952\",\"price\":\"2100.00\"},{\"amount\":\"0.00020574\",\"price\":\"2090.00\"},{\"amount\":\"3.73343750\",\"price\":\"2080.00\"},{\"amount\":\"0.02608696\",\"price\":\"2070.00\"},{\"amount\":\"0.02439024\",\"price\":\"2050.00\"},{\"amount\":\"0.17007980\",\"price\":\"2005.00\"},{\"amount\":\"2.55071500\",\"price\":\"2000.00\"},{\"amount\":\"3.46524557\",\"price\":\"1975.00\"},{\"amount\":\"0.01530604\",\"price\":\"1960.01\"},{\"amount\":\"0.20408163\",\"price\":\"1960.00\"},{\"amount\":\"0.51308363\",\"price\":\"1949.00\"},{\"amount\":\"0.19052632\",\"price\":\"1900.00\"},{\"amount\":\"0.26737968\",\"price\":\"1870.00\"},{\"amount\":\"0.15000000\",\"price\":\"1800.00\"},{\"amount\":\"0.01146125\",\"price\":\"1745.01\"},{\"amount\":\"0.26764706\",\"price\":\"1700.00\"},{\"amount\":\"0.03255526\",\"price\":\"1535.85\"},{\"amount\":\"0.00438519\",\"price\":\"1350.00\"},{\"amount\":\"0.03846154\",\"price\":\"1300.00\"},{\"amount\":\"0.77519380\",\"price\":\"1290.00\"},{\"amount\":\"0.14166667\",\"price\":\"1200.00\"},{\"amount\":\"0.43478261\",\"price\":\"1150.00\"},{\"amount\":\"0.10520000\",\"price\":\"750.00\"},{\"amount\":\"0.00136986\",\"price\":\"730.00\"},{\"amount\":\"0.07377874\",\"price\":\"696.00\"},{\"amount\":\"0.03349282\",\"price\":\"627.00\"},{\"amount\":\"0.08389262\",\"price\":\"596.00\"},{\"amount\":\"0.08409156\",\"price\":\"594.59\"},{\"amount\":\"0.17094017\",\"price\":\"585.00\"},{\"amount\":\"0.04464286\",\"price\":\"560.00\"},{\"amount\":\"0.09916667\",\"price\":\"480.00\"},{\"amount\":\"0.02358379\",\"price\":\"424.02\"},{\"amount\":\"0.12625000\",\"price\":\"400.00\"},{\"amount\":\"0.09411977\",\"price\":\"387.06\"},{\"amount\":\"0.01962162\",\"price\":\"185.00\"},{\"amount\":\"5.00000000\",\"price\":\"1.00\"},{\"amount\":\"100.00000000\",\"price\":\"0.01\"}]},\"duration\":0.016578912734985,\"env\":\"dev\"}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Order",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/get/0611737f-520b-11e7-afb5-0218ad050e37",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "dc284256-b877-44ec-8e47-6d12310beff3",
+							"name": "Success Reponse",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/get/0611737f-520b-11e7-afb5-0218ad050e37",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "290",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:15:37 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 160,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Order\",\"data\":{\"UUID\":\"0611737f-520b-11e7-afb5-0218ad050e37\",\"type\":\"BUY\",\"date\":\"2017-06-15 23:41:35\",\"amount\":\"0.00666667\",\"executed_amount\":null,\"executed_amount_avg_price\":0,\"price\":\"1500.00\",\"currency\":\"EUR\",\"status\":\"CANCELED\",\"tango_order_id\":\"04ebf76c-520b-11e7-afb5-0218ad050e37\"},\"duration\":0.023114919662476,\"env\":\"dev\"}"
+						},
+						{
+							"id": "e809185a-bc39-4ec6-8ab0-c1db4fbe2bdb",
+							"name": "Fail response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/get/0611737f-520b-11e7-afb5-0218ad050e3",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "147",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:16:45 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 178,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"NOT_FOUND\",\"data\":[],\"duration\":0.019376039505005,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Get Real Order Info",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/getRealInfo/2e4bba96-51a0-11e7-afb5-0218ad050e37",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "43117217-e79b-43b4-9b47-1b1863bc87b9",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/getRealInfo/2e4bba96-51a0-11e7-afb5-0218ad050e37",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "221",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:17:05 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 217,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Real Order Info\",\"data\":{\"type\":\"SELL\",\"amount\":0,\"price\":\"2527.41\",\"status\":\"CANCELED\",\"UUID\":\"2e4bba96-51a0-11e7-afb5-0218ad050e37\"},\"duration\":0.083209991455078,\"env\":\"dev\"}"
+						},
+						{
+							"id": "f782ff84-9ab8-4a4e-b277-74953775c3e4",
+							"name": "Fail response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/getRealInfo/2e4bba96-51a0-11e7-afb5-0218ad050e3",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "146",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:17:37 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 261,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"NOT_FOUND\",\"data\":[],\"duration\":0.09332799911499,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Get Order List",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/list",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "0267032d-afcb-4ad2-a5a8-21f876afd4b7",
+							"name": "Success repsonse",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/list",
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "224",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:20:20 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 154,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Order List\",\"data\":{\"asks\":[{\"oid\":\"94c5c618-526c-11e7-afb5-0218ad050e37\",\"amount\":\"0.00100000\",\"price\":\"3000.00\"}],\"bids\":[{\"oid\":\"6bebcbb4-526c-11e7-afb5-0218ad050e37\",\"amount\":\"0.00100000\",\"price\":\"1500.00\"}]},\"duration\":0.014757871627808,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Cancel Order",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/cancel/6bebcbb4-526c-11e7-afb5-0218ad050e37",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "8207fcf2-84f8-4ca3-a857-e8f8af5dd328",
+							"name": "Fail Response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/cancel/0611737f-520b-11e7-afb5-0218ad050e37",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "148",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:20:54 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 174,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"An error occurred\",\"data\":[],\"duration\":0.024519920349121,\"env\":\"dev\"}"
+						},
+						{
+							"id": "d8e69b66-09dd-4762-b849-216e578ff012",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/cancel/94c5c618-526c-11e7-afb5-0218ad050e37",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "143",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:21:24 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 303,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Order Canceled\",\"data\":[],\"duration\":0.14486908912659,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Open Order BUY",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/open/buy",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "0.001",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "3cbb1271-4b42-433e-941a-daf276f771a5",
+							"name": "Fail Response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/open/buy",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1000",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "181",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:18:12 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 3860,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"PRICE_TOO_LOW\",\"data\":{\"UUID\":\"579e603e-526c-11e7-afb5-0218ad050e37\"},\"duration\":3.7060859203339,\"env\":\"dev\"}"
+						},
+						{
+							"id": "ffff6c60-546e-4fc6-afa4-f58c0e71cc6b",
+							"name": "Success Response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/open/buy",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1500",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "179",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:18:45 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 2402,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Buy Order Was Placed\",\"data\":{\"UUID\":\"6b0703dc-526c-11e7-afb5-0218ad050e37\"},\"duration\":2.2526240348816,\"env\":\"dev\"}"
+						}
+					]
+				},
+				{
+					"name": "Open Order SELL",
+					"request": {
+						"url": "http://api.btc-exchange.com/v1/order/open/sell",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "0.001",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "3000",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "f8acd8bf-45e7-4541-a84b-bd76feacceee",
+							"name": "Fail Response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/open/sell",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "10000",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "150",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:19:31 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 2778,
+							"body": "{\"status\":false,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"PRICE_TOO_HIGH\",\"data\":[],\"duration\":2.6169130802155,\"env\":\"dev\"}"
+						},
+						{
+							"id": "fc5cb885-3f33-4cd9-a160-31ca8c56a866",
+							"name": "Success response",
+							"originalRequest": {
+								"url": "http://api.btc-exchange.com/v1/order/open/sell",
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "aaaaaaaa-bbbb-cccc-cccc-dddddddddddd",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "0.001",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "3000",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "no-transform",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "close",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": "The type of encoding used on the data."
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "180",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Fri, 16 Jun 2017 08:19:55 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Apache",
+									"description": "A name for the server"
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "X-UA-Compatible",
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 1263,
+							"body": "{\"status\":true,\"api\":{\"version\":\"1.0\",\"title\":\"Bitmarket::Order API\"},\"message\":\"Sell Order Was Placed\",\"data\":{\"UUID\":\"949e8f73-526c-11e7-afb5-0218ad050e37\"},\"duration\":1.101832151413,\"env\":\"dev\"}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
